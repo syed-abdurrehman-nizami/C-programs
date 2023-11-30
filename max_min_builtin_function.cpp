@@ -1,4 +1,4 @@
-// How to find maximum and minimum number array
+// How to find maximum and minimum number in an array through builtin functions
 
 #include <iostream>
 #include <climits>
@@ -21,16 +21,8 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-
-        if (arr[i] > maxno)
-        {
-            maxno = arr[i];
-        }
-
-        if (arr[i] < minno)
-        {
-            minno = arr[i];
-        }
+        maxno = max(maxno, arr[i]);
+        minno = min(minno, arr[i]);
     }
 
     cout << "maximum number is = " << maxno << endl;
